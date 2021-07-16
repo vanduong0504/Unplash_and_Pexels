@@ -2,4 +2,4 @@ data
 .idea
 concat.py
 pixabays.py
-page/__pycache__
+**/__pycache__
