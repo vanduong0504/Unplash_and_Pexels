@@ -1,6 +1,6 @@
 import argparse
-from page.pexels import Pexels
-from page.unsplash import Unsplash
+from browser.pexels import Pexels
+from browser.unsplash import Unsplash
 
 
 def Option():
