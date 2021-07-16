@@ -2,8 +2,9 @@
 
 <h2> :pencil: About the project </h2>
 
-This project is using API form [*Pexels*]((https://www.pexels.com/)) and [*Unsplash*]((https://unsplash.com/)) to crawl 
+This project is using API form [*Pexels*](https://www.pexels.com/) and [*Unsplash*](https://unsplash.com/) to crawl 
 images. You need to get your **API key** from website to be able to crawl the data.
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <h2> :scroll: Usage </h2>
