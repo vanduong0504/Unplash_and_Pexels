@@ -13,9 +13,15 @@ images. You need to get your **API key** from website to be able to crawl the da
     
 `pip install requirements.txt`
 
-<li> Then run main.py file: </li>
+<li> Then run main.py file for image scarping: </li>
 
-`python main.py --web unsplash --key Your-API-KEY --q vietnam`
+`python main.py --web unsplash --key Your-API-KEY --q vietnam --remove 1`
+
+<li> Using merge.py if you want to merge your image folders: </li>
+
+`python merge.py PATH-TO-FOLDER1 PATH-TO-FOLDER2 ... OUTPUT`
+
+
 </ul>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)

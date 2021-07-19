@@ -1,6 +1,7 @@
 import argparse
 from browser.pexels import Pexels
 from browser.unsplash import Unsplash
+from duplicate_remove import remove
 
 
 def Option():
@@ -17,6 +18,8 @@ def Option():
                         help="Number of results you are requesting per page.")
     parser.add_argument("--dir", type=str, default="data",
                         help="Directory to save your images")
+    parser.add_argument("--remove", type=int, default=0,
+                        help="Remove duplicate image or not")
     return parser
 
 
@@ -27,4 +30,9 @@ if __name__ == '__main__':
     else:
         crawler = Unsplash(opt)
     crawler()
-    print("Done")
+
+    if opt.remove:
+        print("Begin to remove duplicate images in folder {opt.dir} :3")
+        remove(opt.dir)
+
+    print("Done!!")
