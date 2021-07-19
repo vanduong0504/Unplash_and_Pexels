@@ -17,9 +17,9 @@ def Option():
     parser.add_argument("--per_page", type=int, default=5, metavar="PP",
                         help="Number of results you are requesting per page.")
     parser.add_argument("--dir", type=str, default="data",
-                        help="Directory to save your images")
+                        help="Directory to save your images.")
     parser.add_argument("--remove", type=int, default=0,
-                        help="Remove duplicate image or not")
+                        help="Remove duplicate image or not.")
     return parser
 
 

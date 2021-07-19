@@ -1,7 +1,6 @@
 data
 .idea
 ALL
-concat.py
 pixabays.py
 *.pyc
 
