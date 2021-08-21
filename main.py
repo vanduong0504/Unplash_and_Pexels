@@ -32,7 +32,7 @@ if __name__ == '__main__':
     crawler()
 
     if opt.remove:
-        print("Begin to remove duplicate images in folder {opt.dir} :3")
+        print(f"Begin to remove duplicate images in folder {opt.dir} :3")
         remove(opt.dir)
 
     print("Done!!")

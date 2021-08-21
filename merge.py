@@ -6,10 +6,10 @@ import shutil
 
 class merge_folder:
     def __init__(self, folders_, output_):
-        print(f"List of folders to merge: {folders}")
-        print(f"Output folder: {output}")
-        self.folders = folders
-        self.output = output
+        print(f"List of folders to merge: {folders_}")
+        print(f"Output folder: {output_}")
+        self.folders = folders_
+        self.output = output_
         try:
             os.makedirs(self.output)
         except FileExistsError:
@@ -20,7 +20,7 @@ class merge_folder:
         for folder in self.folders:
             # path = os.path.join("data", folder)
             for image in glob.glob(folder + "/*.jpg"):
-                shutil.copy(image, f"ALL/{count}.jpg")
+                shutil.copy(image, f"{self.output}/{count}.jpg")
                 count += 1
 
 

@@ -15,15 +15,14 @@ def remove(dir):
     for image in glob.glob(dir + "/*jpg"):
         hash = check(image)
         image_name = os.path.split(image)[1]
-        if check(image) not in finder:
+        if hash not in finder:
             finder[hash] = [image_name]
         else:
-            finder[hash] += [image_name]
             os.remove(image)
 
 
 if __name__ == "__main__":
     folder = sys.argv[1]
     print(f"Begin to remove duplicate images in folder {folder} :3")
-    remove(dir)
+    remove(folder)
     print("Done!!")
