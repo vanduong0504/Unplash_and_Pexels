@@ -1,6 +1,5 @@
 data
-.idea
 ALL
-pixabays.py
-*.pyc
 ALL.rar
+__pycache__
+.vscode
